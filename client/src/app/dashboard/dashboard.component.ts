@@ -47,6 +47,7 @@ export class DashboardComponent implements OnInit {
         setTimeout (() => {
           this.successondelete=false
         }, 2000)
+        this.ngOnInit()
       } else {
         alert(res.result)
       }
