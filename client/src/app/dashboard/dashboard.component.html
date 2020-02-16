@@ -1,0 +1,42 @@
+<div class="tectcenter" *ngIf="successondelete">
+  <div class="alert alert-danger" role="alert">
+    you have removed the User
+  </div>
+</div>
+<div class="container">
+  <h2>All Users Data</h2>
+  <table class="table table-striped table-hover tablebrd">
+    <thead class="thead-dark">
+      <tr>
+        <th>SNo</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Desc</th>
+        <th>DOB</th>
+        <th>URL</th>
+        <th>Gender</th>
+        <th>Action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of user; let i = index ">
+        <td>{{i+1}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.auth.email}}</td>
+        <td>{{data.mobile}}</td>
+        <td>{{data.desc}}</td>
+        <td>{{data.dob}}</td>
+        <td>{{data.url}}</td>
+        <td>{{data.gender}}</td>
+        <td>
+          <button routerLink="/user/{{data._id}}" class="btn btn-info btn-sm"> Edit</button>
+          <button   *ngIf="role == 'admin' && data.userType !='admin'" (click)="deleteuser(data._id)" class="btn btn-danger btn-sm btnmargin"> Delete</button>
+        </td>
+
+
+      </tr>
+    </tbody>
+  </table>
+</div>
