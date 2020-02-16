@@ -9,7 +9,7 @@ restricted access for logged in user <br>
 non logged in users can access only basic pages <br>
 CRUD provided for users <br>
 
-<bold>NOTE: This application is role Base Roles are admin and user <br>
+<bold>NOTE: </bold> This application is role Base Roles are admin and user <br>
 first registred user will be admin <br>
 then after all user registred as user <br>
 when admin log in he can see all users and can perform CRUD operation and also can add users<br>
