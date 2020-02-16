@@ -9,11 +9,11 @@ restricted access for logged in user <br>
 non logged in users can access only basic pages <br>
 CRUD provided for users <br>
 
-NOTE: This application is role Base Roles are admin and user <br>
+<bold>NOTE: This application is role Base Roles are admin and user <br>
 first registred user will be admin <br>
 then after all user registred as user <br>
 when admin log in he can see all users and can perform CRUD operation and also can add users<br>
-when user logs in he can see only his detail and can update the self details <br>
+when user logs in he can see only his detail and can update the self details <br> </bold>
 
 Running server <br>
 clone repository <br>
