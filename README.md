@@ -7,22 +7,22 @@ authentication system <br>
 mongoDb using mongoose <br>
 restricted access for logged in user <br>
 non logged in users can access only basic pages <br>
-CRUD provided for users
+CRUD provided for users <br>
 
-Running server
-clone repository
-1 install node modules 
-cd UserApp_ClearQuote
-npm install
-node server.js or nodemon
-server start at http://localhost:5000/
+Running server <br>
+clone repository <br>
+1 install node modules  <br>
+cd UserApp_ClearQuote <br>
+npm install <br>
+node server.js or nodemon <br>
+server start at http://localhost:5000/ <br>
 
-Running Client
-install node modules 
-cd UserApp_ClearQuote/client
-npm install
-ng serve
-server start at  http://localhost:4200/ 
+Running Client <br>
+install node modules  <br>
+cd UserApp_ClearQuote/client <br>
+npm install <br>
+ng serve<br>
+server start at  http://localhost:4200/  <br>
 
 
 
