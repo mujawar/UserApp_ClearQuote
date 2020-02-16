@@ -26,7 +26,7 @@
               <div class="form-group">
                 <input type="email" formControlName="email" name="email" id="email" class="form-control" placeholder="Email" [ngClass]="{'is-invalid':regForm.get('email').touched && regForm.get('email').invalid}"   />
                 <div *ngIf="regForm.get('email').touched && regForm.get('email').invalid"  class="alert-danger invalid-feedback">
-                  <div *ngIf="regForm.get('email').errors.required">Email Name is required</div>
+                  <div *ngIf="regForm.get('email').errors.required">Email is required</div>
                   <div *ngIf="regForm.get('email').errors.email">Email must be a valid email Address</div>
               </div>
             </div>

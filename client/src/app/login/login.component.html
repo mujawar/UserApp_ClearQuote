@@ -16,7 +16,7 @@
           <label>Email</label>
           <input class="form-control" type="email" placeholder="Email" formControlName="email" [ngClass]="{'is-invalid':form.get('email').touched && form.get('email').invalid}">
           <div *ngIf="form.get('email').touched && form.get('email').invalid"  class="alert-danger invalid-feedback">
-            <div *ngIf="form.get('email').errors.required">Email Name is required</div>
+            <div *ngIf="form.get('email').errors.required">Email is required</div>
             <div *ngIf="form.get('email').errors.email">Email must be a valid email Address</div>
           </div>
         </div>
