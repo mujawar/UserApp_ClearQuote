@@ -2,11 +2,11 @@
 web application CRUD operation buit on Nodejs Express Mongo and Angular 6 with sign and sign up 
 
 Objectives
-Angular MongoDb Express AngularJs NodeJS Project (MEAN)
-authentication system
-mongoDb using mongoose
-restricted access for logged in user
-non logged in users can access only basic pages
+Angular MongoDb Express AngularJs NodeJS Project (MEAN) <br>
+authentication system <br>
+mongoDb using mongoose <br>
+restricted access for logged in user <br>
+non logged in users can access only basic pages <br>
 CRUD provided for users
 
 Running server
