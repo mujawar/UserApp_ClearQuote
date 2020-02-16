@@ -5,7 +5,12 @@
 </div>
 <div class="textCenter" *ngIf="successMsAdd">
   <div class="alert alert-success" role="alert">
-    you have successfully Added the User
+    you have successfully Added the User Username and password are sent to User Email
+  </div>
+</div>
+<div class="textCenter" *ngIf="errormsg">
+  <div class="alert alert-warning" role="alert">
+    Email already exists
   </div>
 </div>
 <div class="container containerSize">

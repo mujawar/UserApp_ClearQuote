@@ -16,21 +16,21 @@
         <th class="colwidth10">DOB</th>
         <th class="colwidth10">URL</th>
         <th class="colwidth5">Gender</th>
-        <th class="colwidth10">Action</th>
+        <th class="colwidth15">Action</th>
 
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let data of user; let i = index ">
-        <td>{{i+1}}</td>
-        <td>{{data.name}}</td>
-        <td>{{data.auth.email}}</td>
-        <td>{{data.mobile}}</td>
-        <td>{{data.desc}}</td>
-        <td>{{data.dob}}</td>
-        <td>{{data.url}}</td>
-        <td>{{data.gender}}</td>
-        <td>
+      <tr *ngFor="let data of user; let i = index">
+        <td class="colwidth5">{{i+1}}</td>
+        <td class="colwidth10">{{data.name}}</td>
+        <td class="colwidth10">{{data.auth.email}}</td>
+        <td class="colwidth10">{{data.mobile}}</td>
+        <td class="colwidth20">{{data.desc}}</td>
+        <td class="colwidth10">{{data.dob}}</td>
+        <td class="colwidth10">{{data.url}}</td>
+        <td class="colwidth5">{{data.gender}}</td>
+        <td class="colwidth15">
           <button routerLink="/user/{{data._id}}" class="btn btn-info btn-sm"> Edit</button>
           <button   *ngIf="role == 'admin' && data.userType !='admin'" (click)="deleteuser(data._id)" class="btn btn-danger btn-sm btnmargin"> Delete</button>
         </td>

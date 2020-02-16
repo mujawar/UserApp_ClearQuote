@@ -14,6 +14,7 @@ import {IMyDpOptions} from 'mydatepicker';
 })
 export class AddUserComponent implements OnInit {
   urlRegex = '(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?';
+  errormsg=false
   successMsgupdate = false
   successMsAdd = false
   public myDatePickerOptions: IMyDpOptions = {
@@ -84,7 +85,8 @@ export class AddUserComponent implements OnInit {
 
           console.log(res)
         } else {
-          alert(res.result)
+          this.errormsg = true
+          //alert(res.result)
         }
       },error => { console.log(error) });
 
@@ -125,7 +127,8 @@ export class AddUserComponent implements OnInit {
               this.router.navigate(['dashboard']);
             }, 2000)
           } else {
-            alert(res.result)
+            this.errormsg = true
+            //alert(res.result)
           }
         },error => { console.log(error) });
   }
@@ -141,8 +144,8 @@ export class AddUserComponent implements OnInit {
       "dob":this.addForm.value.dob.formatted,
       "desc":this.addForm.value.desc
     }
-    this.apiService.updateUser(userdata).subscribe(data => {
-      console.log("update calling")
+    this.apiService.updateUser(userdata).pipe(first()).subscribe((data :any)=> {
+      console.log("update calling",data.status)
         this.successMsgupdate = true
         setTimeout (() => {
           this.router.navigate(['dashboard']);
