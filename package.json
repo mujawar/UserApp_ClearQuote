@@ -6,7 +6,7 @@
     "bcrypt": "^3.0.8",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "mongoose": "^5.9.0"
